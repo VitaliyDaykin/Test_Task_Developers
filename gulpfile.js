@@ -17,14 +17,14 @@ var path = {
     js: "./build/js/",
     css: "./build/css/",
     images: "./build/image/",
-    fonts: "./build/css/fonts/",
+    fonts: "./build/fonts/",
   },
   src: {
     html: "./src/[^_]*.html",
     js: "./src/js/**/*.js",
     css: "./src/css/**/*.{scss,css}",
     images: "./src/image/**",
-    fonts: "./src/css/fonts/**",
+    fonts: "./src/fonts/**",
   },
   watch: {
     html: "./src/**/*.html",

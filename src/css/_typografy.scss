@@ -1,0 +1,13 @@
+@include fontFace($defaultFont, $defaultPath);
+@include fontFace($defaultFont, $defaultPath600);
+@include fontFace($defaultFont, $defaultPath700);
+@include fontFace($defaultFont, $defaultPath800);
+@include fontFace($defaultFont, $defaultPath900);
+
+.page {
+  font-family: $defaultFonts;
+  font-size: $defaultFontSize;
+  color: $textColor;
+  font-weight: 400;
+  line-height: 25px;
+}

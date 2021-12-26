@@ -1,0 +1,25 @@
+$defaultFont: "Montserrat";
+
+$defaultPath: "../montserrat-v18-latin-regular";
+$defaultPath600: "../montserrat-v18-latin-600";
+$defaultPath700: "../montserrat-v18-latin-700";
+$defaultPath800: "../montserrat-v18-latin-800";
+$defaultPath900: "../montserrat-v18-latin-900";
+
+$follbak: Arial, Helvetica, sans-serif;
+
+$defaultFonts: $defaultFont, $follbak;
+$defaultFontSize: 18px;
+
+// цвета
+$waht: #fff;
+$black: #000;
+$malibu: #67aefc;
+$codGray: #111111;
+$pastelGree: #75e169;
+$tundora: #484848;
+
+$textColor: $black;
+$textColorSecondary: $codGray;
+$buttonColor: $pastelGree;
+$buttonColorActive: $malibu;
