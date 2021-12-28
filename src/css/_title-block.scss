@@ -1,0 +1,32 @@
+.title-block {
+  background-image: url(../image/title-img-min.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: calc(100vh - 96px);
+  min-height: 550px;
+  padding: 40px 20px;
+  &__wrapp {
+  }
+
+  &__subtitle {
+    width: 432px;
+    font-size: 16px;
+    margin-bottom: 58px;
+  }
+
+  &__button {
+  }
+}
+
+.title-h1 {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 63px;
+  color: $tundora;
+  width: 600px;
+  margin-bottom: 20px;
+  padding-top: 115px;
+}
+
+.button__title-block {
+}
