@@ -1,1 +1,58 @@
+.header {
+  background-color: $malibu;
+  padding: 18px 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  &__blok-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    padding-left: 30px;
+  }
+}
+
+.logo {
+  &__link {
+  }
+
+  &__img {
+    display: block;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    color: $buttonColor;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    text-decoration: none;
+    padding: 8px 25px;
+    border: 2px solid transparent;
+  }
+  &__link:hover {
+    background: $buttonBGColor;
+    padding: 8px 25px;
+    border-radius: 5px;
+    border: 2px solid $buttonColor;
+    color: $waht;
+  }
+
+  &__link:active {
+    background-color: $waht;
+    color: $malibu;
+  }
+}
