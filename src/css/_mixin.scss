@@ -8,7 +8,7 @@
     font-family: $fontFamily;
     font-style: $fontStyle;
     font-weight: $fontWeight;
-    src: url("#{$fontPath}.woff2") format("woff2"),
-      url("#{$fontPath}.woff") format("woff");
+    src: url("#{$fontPath}.ttf") format("ttf");
+    // src: url("#{$fontPath}.woff") format("woff");
   }
 }

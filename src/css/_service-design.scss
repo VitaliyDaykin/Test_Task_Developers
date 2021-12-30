@@ -1,0 +1,66 @@
+.service-design {
+  min-height: 550px;
+  background-color: $serviceDesignBG;
+  padding: 120px 20px;
+}
+
+.accordion {
+  &__item {
+    background-color: $waht;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    color: $accordionColor;
+    padding: 15px 0 15px 96px;
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: $buttonBGColor;
+      top: 14px;
+      left: 40px;
+    }
+    &::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      border-left: 1px solid $arrowColor;
+      border-bottom: 1px solid $arrowColor;
+      top: 18px;
+      right: 40px;
+      transform: rotate(-45deg);
+      transition: all 0.3s ease-out;
+    }
+    &.active::before {
+      background-color: $accordeonBGActive;
+    }
+    &.active::after {
+      transform: rotate(135deg);
+    }
+  }
+
+  &__text {
+    padding: 15px 69px 54px 96px;
+    display: none;
+  }
+
+  &__text p {
+    position: relative;
+  }
+  p::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background-color: $arrowColor;
+    top: 0px;
+    left: -44px;
+  }
+}

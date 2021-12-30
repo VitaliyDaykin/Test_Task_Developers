@@ -1,10 +1,10 @@
 $defaultFont: "Montserrat";
 
-$defaultPath: "../montserrat-v18-latin-regular";
-$defaultPath600: "../montserrat-v18-latin-600";
-$defaultPath700: "../montserrat-v18-latin-700";
-$defaultPath800: "../montserrat-v18-latin-800";
-$defaultPath900: "../montserrat-v18-latin-900";
+$defaultPath: "../fonts/Montserrat-Regular";
+$defaultPath600: "../fonts/Montserrat-SemiBold";
+$defaultPath700: "../fonts/Montserrat-Bold";
+$defaultPath800: "../fonts/Montserrat-ExtraBold";
+$defaultPath900: "../fonts/Montserrat-Black";
 
 $follbak: Arial, Helvetica, sans-serif;
 
@@ -18,9 +18,14 @@ $malibu: #67aefc;
 $codGray: #111111;
 $pastelGree: #75e169;
 $tundora: #484848;
+$pattensBlue: #daecff;
 
 $textColor: $black;
 $textColorSecondary: $codGray;
 $buttonBGColor: $pastelGree;
 $accordeonBGActive: $malibu;
 $buttonColor: $waht;
+
+$serviceDesignBG: $pattensBlue;
+$accordionColor: $codGray;
+$arrowColor: $black;
