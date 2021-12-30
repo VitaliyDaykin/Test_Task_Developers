@@ -2,9 +2,20 @@
   min-height: 550px;
   background-color: $serviceDesignBG;
   padding: 120px 20px;
+  position: relative;
+
+  &__title {
+    margin-bottom: 100px;
+  }
+  &__img-wrapper {
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    bottom: 15%;
+  }
 }
 
-.accordion {
+.accordion-spoiler {
   &__item {
     background-color: $waht;
     border-radius: 15px;
@@ -63,4 +74,11 @@
     top: 0px;
     left: -44px;
   }
+}
+
+.accordion-spoiler__item-active .accordion-spoiler__text {
+  display: block;
+}
+
+.accordion-spoiler__item-active .accordion-spoiler__title {
 }
