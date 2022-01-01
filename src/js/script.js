@@ -12,3 +12,12 @@ $(document).ready(function () {
     }
   });
 });
+
+// carousel
+
+$(".stages-development__carousel-wrapper ").slick({
+  infinite: true,
+  slidesToShow: 1.65,
+  slidesToScroll: 1,
+  // autoplay: true,
+});

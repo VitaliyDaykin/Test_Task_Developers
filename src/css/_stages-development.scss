@@ -1,0 +1,91 @@
+.stages-development {
+  min-height: 550px;
+  background-color: $stagesDevelopmentBG;
+  padding: 120px 20px;
+  position: relative;
+
+  &__title {
+    margin-bottom: 100px;
+  }
+
+  &__img-wrapper-sphere {
+    position: absolute;
+    top: 129px;
+    left: 187px;
+  }
+
+  &__img-wrapper-wave {
+    position: absolute;
+    bottom: 47px;
+    right: 186px;
+  }
+
+  &__carousel-wrapper {
+    // max-width: 694px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+  }
+
+  &__img-carousel__imge {
+    width: 250px;
+  }
+  &__item-wrapper {
+    padding: 0 10px;
+  }
+  &__item {
+    display: flex;
+    height: 385px;
+    max-width: 690px;
+    border-radius: 15px;
+    border: 2px solid $borderColor;
+    justify-content: space-around;
+    align-items: center;
+
+    &_h3 {
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 26px;
+      text-align: left;
+      margin-bottom: 29px;
+    }
+  }
+
+  &__item p {
+    width: 300px;
+    line-height: 25px;
+    text-align: left;
+  }
+}
+
+.slick-arrow.slick-prev {
+  background: url(../image/nextArrow.svg);
+  left: 52%;
+}
+
+.slick-arrow.slick-next {
+  background: url(../image/prevArrow.svg);
+  left: 45%;
+}
+
+.slick-arrow.slick-next:hover {
+  background: url(../image/nextArrowActive.svg);
+  width: 60px;
+  height: 60px;
+}
+
+.slick-arrow.slick-prev:hover {
+  background: url(../image/prevArrowActive.svg);
+  width: 60px;
+  height: 60px;
+}
+
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev {
+  position: absolute;
+  bottom: -142px;
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  cursor: pointer;
+}

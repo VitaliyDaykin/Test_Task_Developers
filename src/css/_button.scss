@@ -1,6 +1,6 @@
 .button {
-  width: 170px;
-  height: 38px;
+  width: 168px;
+  height: 36px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +12,7 @@
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 700;
+  border: 2px solid transparent;
 
   &__header:hover {
     border: 2px solid $buttonColor;

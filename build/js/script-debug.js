@@ -11,4 +11,11 @@ $(document).ready(function () {
       parent.addClass("accordion-spoiler__item-active");
     }
   });
+}); // carousel
+
+$(".stages-development__carousel-wrapper ").slick({
+  infinite: true,
+  slidesToShow: 1.65,
+  slidesToScroll: 1 // autoplay: true,
+
 });
