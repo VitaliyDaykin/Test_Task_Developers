@@ -1,0 +1,41 @@
+.more-info {
+  background-image: url(../image/Orders.png);
+  background-repeat: no-repeat;
+  background-size: 32%;
+  position: relative;
+  padding: 40px 20px;
+  background-position: right;
+  background-position-x: 1120px;
+
+  &__title {
+    text-align: left;
+    margin-bottom: 53px;
+    padding-top: 176px;
+  }
+
+  &__subtitle {
+    width: 680px;
+    margin-bottom: 45px;
+  }
+
+  &__button {
+    margin-bottom: 140px;
+  }
+
+  &__img-wrapper-sphere {
+    position: absolute;
+    top: 150px;
+    left: 153px;
+  }
+}
+
+.button__more-info {
+  width: 270px;
+  height: 60px;
+
+  &:hover {
+    border: 2px solid $malibu;
+    color: $malibu;
+    background-color: $waht;
+  }
+}

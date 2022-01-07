@@ -29,4 +29,12 @@
 }
 
 .button__title-block {
+  width: 270px;
+  height: 60px;
+
+  &:hover {
+    border: 2px solid $malibu;
+    color: $malibu;
+    background-color: $waht;
+  }
 }

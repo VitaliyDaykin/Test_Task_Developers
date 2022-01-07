@@ -1,6 +1,6 @@
 .button {
-  width: 168px;
-  height: 36px;
+  width: 170px;
+  height: 37px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,15 +16,11 @@
 
   &__header:hover {
     border: 2px solid $buttonColor;
-    color: $waht;
   }
 
   &__header:active {
     background-color: $waht;
     color: $malibu;
+    border: 2px solid $malibu;
   }
-}
-
-.button:hover {
-  color: $waht;
 }

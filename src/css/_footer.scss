@@ -1,0 +1,49 @@
+.footer {
+  background-color: $malibu;
+  padding: 100px 20px 70px;
+
+  &__social {
+    margin: 45px 0 120px;
+  }
+
+  &__logo__img {
+    width: 280px;
+  }
+
+  &__link:not(:last-child) {
+    text-decoration: none;
+    padding-right: 36px;
+  }
+
+  &__phone-blocks-wrapper {
+    padding-left: 50px;
+  }
+
+  &__infarmational-block,
+  &__phone-blocks {
+    padding-top: 13px;
+    position: relative;
+  }
+
+  &__phone-blocks a,
+  &__infarmational-block a {
+    text-decoration: none;
+    color: $waht;
+  }
+
+  &__phone-blocks::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 14px;
+    left: -31px;
+    background-image: url(../image/call.svg);
+  }
+
+  &__copyright {
+    color: $waht;
+    text-align: center;
+  }
+}
