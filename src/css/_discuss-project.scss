@@ -37,6 +37,10 @@
     padding: 17px 14px;
     border: 1px solid $borderColor;
     border-radius: 5px;
+
+    &.error {
+      border: 2px solid $error;
+    }
   }
 
   &__input::placeholder {

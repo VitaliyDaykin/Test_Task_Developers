@@ -21,3 +21,36 @@ $(".stages-development__carousel-wrapper ").slick({
   slidesToScroll: 1,
   autoplay: true,
 });
+
+// validation form;
+
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  if (!validation(this)) {
+    this.submit();
+  }
+});
+
+function validation(contactForm) {
+  let isError = false;
+
+  for (let i = 0; i < contactForm.length; i++) {
+    const elementForm = contactForm[i];
+
+    if (elementForm.dataset.required && elementForm.value === "") {
+      isError = true;
+      elementForm.classList.add("error");
+      elementForm.addEventListener("input", remuveErrorClass);
+    }
+  }
+
+  return isError;
+}
+
+function remuveErrorClass() {
+  this.classList.remove("error");
+  this.removeEventListener("input", remuveErrorClass);
+}

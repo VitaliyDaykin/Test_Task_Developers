@@ -18,4 +18,34 @@ $(".stages-development__carousel-wrapper ").slick({
   slidesToShow: 1.65,
   slidesToScroll: 1,
   autoplay: true
+}); // validation form;
+
+var contactForm = document.getElementById("contactForm");
+contactForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  if (!validation(this)) {
+    this.submit();
+  }
 });
+
+function validation(contactForm) {
+  var isError = false;
+
+  for (var i = 0; i < contactForm.length; i++) {
+    var elementForm = contactForm[i];
+
+    if (elementForm.dataset.required && elementForm.value === "") {
+      isError = true;
+      elementForm.classList.add("error");
+      elementForm.addEventListener("input", remuveErrorClass);
+    }
+  }
+
+  return isError;
+}
+
+function remuveErrorClass() {
+  this.classList.remove("error");
+  this.removeEventListener("input", remuveErrorClass);
+}
