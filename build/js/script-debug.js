@@ -1,5 +1,13 @@
 "use strict";
 
+// menu burger
+$(document).ready(function () {
+  $(".menu-burger-btn").on("click", function () {
+    $(".menu-burger-btn, .header__blok-menu").toggleClass("active");
+    $("body").toggleClass("lock");
+  });
+}); // accordion
+
 $(document).ready(function () {
   $(".accordion-spoiler__title").on("click", function () {
     var parent = $(this).parent();

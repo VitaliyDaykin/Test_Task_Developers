@@ -1,6 +1,30 @@
 .header {
   background-color: $malibu;
-  padding: 18px 0;
+  padding: 4px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  @media screen and (max-width: 992px) {
+    padding: 10px 0;
+    & .container {
+      padding: 5px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $malibu;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -10,28 +34,55 @@
   &__blok-menu {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 3;
   }
 
   &__button {
     padding-left: 30px;
+
+    @media screen and (max-width: 1200px) {
+      padding-left: 0;
+    }
+
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
   }
 }
 
 .logo {
   &__link {
+    z-index: 10;
   }
 
   &__img {
     display: block;
+    @media screen and (max-width: 1200px) {
+      width: 160px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 135px;
+    }
   }
 }
 
 .menu {
   &__list {
     display: flex;
+    @media screen and (max-width: 992px) {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 50px;
+    }
   }
 
   &__item {
+    @media screen and (max-width: 992px) {
+      padding-bottom: 40px;
+    }
   }
 
   &__link {
@@ -42,6 +93,15 @@
     text-decoration: none;
     padding: 8px 25px;
     border: 2px solid transparent;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 8px 20px;
+    }
+    @media screen and (max-width: 992px) {
+      font-size: 18px;
+    }
   }
   &__link:hover {
     background: $buttonBGColor;
@@ -54,5 +114,80 @@
   &__link:active {
     background-color: $waht;
     color: $malibu;
+  }
+}
+
+.menu-burger-btn {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .menu-burger-btn {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 16px;
+    z-index: 10;
+
+    &.active::before {
+      transform: rotate(45deg);
+      top: 7px;
+      transition: 0.3s;
+    }
+
+    &.active::after {
+      transform: rotate(-45deg);
+      bottom: 7px;
+      transition: 0.3s;
+    }
+  }
+
+  .menu-burger-btn span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $waht;
+    top: 7px;
+  }
+
+  .menu-burger-btn.active span {
+    transform: scale(0);
+  }
+
+  .menu-burger-btn::after,
+  .menu-burger-btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $waht;
+    left: 0;
+    transition: 0.3s;
+  }
+  .menu-burger-btn::before {
+    top: 0;
+  }
+
+  .menu-burger-btn::after {
+    bottom: 0;
+  }
+
+  .header__blok-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: $malibu;
+    transition: 0.5s ease 0s;
+
+    &.active {
+      top: 0;
+      transition: 0.5s ease 0s;
+    }
   }
 }

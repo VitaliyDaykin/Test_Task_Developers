@@ -4,6 +4,12 @@
   padding: 120px 20px;
   position: relative;
 
+  & img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
   &__img-wrapper-wave {
     position: absolute;
     top: 300px;
@@ -20,7 +26,7 @@
 
   &__flip-card {
     height: 447px;
-    width: 563px;
+    max-width: 563px;
     perspective: 1000px;
     background-color: transparent;
     display: block;
