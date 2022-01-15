@@ -7,31 +7,90 @@
   background-position: right;
   background-position-x: 1120px;
 
+  @media screen and (max-width: 1680px) {
+    background-position-x: 950px;
+  }
+
+  @media screen and (max-width: 1440px) {
+    background-position-x: 750px;
+    background-size: 38%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    background-position-x: 620px;
+    background-size: 45%;
+  }
+
+  @media screen and (max-width: 992px) {
+    background-position: top;
+    background-position-y: 50px;
+  }
+
+  @media screen and (max-width: 695px) {
+    background-image: url("");
+  }
+
   &__title {
     text-align: left;
     margin-bottom: 53px;
     padding-top: 176px;
+
+    @media screen and (max-width: 992px) {
+      padding-top: 260px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 695px) {
+      padding-top: 0;
+      text-align: center;
+    }
+  }
+
+  &__img-wrapper-title {
+    @media screen and (min-width: 695px) {
+      display: none;
+    }
+    padding-bottom: 30px;
+    & .imge {
+      margin: 0 auto;
+    }
   }
 
   &__subtitle {
     width: 680px;
     margin-bottom: 45px;
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
   }
 
   &__button {
     margin-bottom: 140px;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__img-wrapper-sphere {
     position: absolute;
     top: 150px;
     left: 153px;
+
+    @media screen and (max-width: 695px) {
+      display: none;
+    }
   }
 }
 
 .button__more-info {
   width: 270px;
   height: 60px;
+
+  @media screen and (max-width: 695px) {
+    margin: 0 auto;
+  }
 
   &:hover {
     border: 2px solid $malibu;

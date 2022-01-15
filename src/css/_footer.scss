@@ -2,17 +2,55 @@
   background-color: $malibu;
   padding: 100px 20px 70px;
 
+  @media screen and (max-width: 992px) {
+    padding: 50px 20px 50px;
+  }
+
   &__social {
     margin: 45px 0 120px;
+
+    @media screen and (max-width: 992px) {
+      margin: 45px 0 80px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin: 38px auto 5px;
+      width: 285px;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__logo__img {
     width: 280px;
+
+    @media screen and (max-width: 992px) {
+      width: 215px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 280px;
+      margin: 0 auto;
+    }
+  }
+
+  &__link .staff-item__svg {
+    @media screen and (max-width: 768px) {
+      width: 32px;
+    }
+  }
+
+  &__link:nth-child(2) .staff-item__svg {
+    width: 17px;
   }
 
   &__link:not(:last-child) {
     text-decoration: none;
     padding-right: 36px;
+
+    @media screen and (max-width: 992px) {
+      padding-right: 15px;
+    }
   }
 
   &__phone-blocks-wrapper {
@@ -22,7 +60,21 @@
   &__infarmational-block,
   &__phone-blocks {
     padding-top: 13px;
-    position: relative;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__infarmational-block-wrapper {
+    margin-bottom: 60px;
+  }
+
+  &__infarmational-block,
+  &__infarmational-block-wrapper {
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
   }
 
   &__phone-blocks a,
@@ -30,21 +82,57 @@
     text-decoration: none;
     color: $waht;
     font-size: 20px;
+    position: relative;
+
+    @media screen and (max-width: 992px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 
-  &__phone-blocks::after {
+  &__phone-blocks a::before {
     content: "";
     display: block;
     width: 24px;
     height: 24px;
     position: absolute;
-    top: 14px;
-    left: -31px;
+    top: 1px;
+    left: -35px;
     background-image: url(../image/call.svg);
+
+    @media screen and (max-width: 768px) {
+      left: -34px;
+      top: 0;
+    }
+  }
+
+  &__infarmational-block a::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 1px;
+    left: -35px;
+    background-image: url(../image/mail.svg);
+
+    @media screen and (max-width: 768px) {
+      left: -34px;
+      top: 1;
+    }
   }
 
   &__copyright {
     color: $waht;
     text-align: center;
+  }
+
+  &__mob {
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 }

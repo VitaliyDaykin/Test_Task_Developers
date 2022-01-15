@@ -4,18 +4,62 @@
   padding: 120px 20px;
   position: relative;
 
+  @media (max-width: 768px) {
+    padding: 60px 20px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 20px;
+  }
+
   &__title {
     margin-bottom: 100px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+      font-size: 26px;
+    }
+
+    @media (max-width: 576px) {
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 28px;
+    }
   }
   &__img-wrapper {
     display: inline-block;
     position: absolute;
     right: 10%;
     bottom: 15%;
+    @media (max-width: 1690px) {
+      right: 8%;
+      bottom: 5%;
+    }
+
+    @media (max-width: 768px) {
+      fright: 5%;
+      bottom: 2%;
+    }
+
+    @media (max-width: 576px) {
+      display: none;
+    }
+
+    & img {
+      @media (max-width: 1830px) {
+        width: 90px;
+      }
+
+      @media (max-width: 768px) {
+        width: 70px;
+      }
+    }
   }
 }
 
 .accordion-spoiler {
+  width: 100%;
+
   &__item {
     background-color: $waht;
     border-radius: 15px;
@@ -24,9 +68,18 @@
 
   &__title {
     color: $accordionColor;
-    padding: 15px 0 15px 96px;
+    padding: 15px 20px 15px 96px;
     position: relative;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 576px) {
+      padding: 15px 50px 15px 40px;
+    }
+
     &::before {
       content: "";
       width: 24px;
@@ -36,6 +89,13 @@
       background-color: $buttonBGColor;
       top: 14px;
       left: 40px;
+
+      @media (max-width: 576px) {
+        width: 15px;
+        height: 15px;
+        top: 19px;
+        left: 14px;
+      }
     }
     &::after {
       content: "";
@@ -78,7 +138,4 @@
 
 .accordion-spoiler__item-active .accordion-spoiler__text {
   display: block;
-}
-
-.accordion-spoiler__item-active .accordion-spoiler__title {
 }

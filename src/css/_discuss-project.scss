@@ -1,12 +1,78 @@
 .discuss-project {
-  background-image: url(../image/contact.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: $discussProjectBG;
   padding: 40px 20px;
+  position: relative;
+
+  &__phone-wrapper .imge {
+    position: absolute;
+    top: 263px;
+    left: 236px;
+    @media screen and (max-width: 1586px) {
+      left: 163px;
+    }
+
+    @media screen and (max-width: 1440px) {
+      left: 130px;
+    }
+
+    @media screen and (max-width: 1300px) {
+      left: 100px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      left: 29px;
+      width: 25%;
+    }
+  }
+
+  &__sphere-wrapper .imge {
+    position: absolute;
+    top: 289px;
+    right: 405px;
+
+    @media screen and (max-width: 1586px) {
+      right: 180px;
+      width: 14%;
+    }
+
+    @media screen and (max-width: 1200px) {
+      right: 110px;
+      width: 14%;
+    }
+  }
+
+  // &__content-wrapper {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+  &__sphere-wrapper .imge,
+  &__phone-wrapper .imge {
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+  &__postpaid-wrapper .imge {
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+
+    margin: 0 auto;
+  }
 
   &__title {
     margin-bottom: 25px;
     padding-top: 130px;
+
+    @media screen and (max-width: 992px) {
+      padding-top: 30px;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding-top: 0;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
   }
 
   &__subtitle {
@@ -15,6 +81,11 @@
     width: 470px;
     margin: 0 auto;
     margin-bottom: 25px;
+
+    @media screen and (max-width: 480px) {
+      width: 325px;
+      font-size: 16px;
+    }
   }
 
   &__form {
@@ -34,6 +105,10 @@
   &__input {
     width: 470px;
 
+    @media screen and (max-width: 480px) {
+      width: 335px;
+    }
+
     padding: 17px 14px;
     border: 1px solid $borderColor;
     border-radius: 5px;
@@ -52,6 +127,14 @@
     height: 60px;
     cursor: pointer;
     margin-bottom: 90px;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 325px;
+    }
 
     &:hover {
       border: 2px solid $malibu;

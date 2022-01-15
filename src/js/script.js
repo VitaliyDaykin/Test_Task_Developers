@@ -31,6 +31,22 @@ $(".stages-development__carousel-wrapper ").slick({
   slidesToShow: 1.65,
   slidesToScroll: 1,
   autoplay: true,
+
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+
+$(".flip-box-mob__carousel-wrapper ").slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
 });
 
 // validation form;
