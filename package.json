@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp",
-    "prod": "gulp prod"
+    "prod": "gulp prod",
+    "deploy": "gulp build && gh-pages -d build"
   },
   "author": "Diakin Vitalii",
   "license": "ISC",
