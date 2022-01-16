@@ -53,6 +53,10 @@
       width: 344px;
       margin-bottom: 25px;
     }
+
+    @media screen and (max-width: 360px) {
+      width: 280px;
+    }
   }
 }
 

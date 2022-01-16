@@ -91,6 +91,10 @@
     @media screen and (max-width: 480px) {
       width: 220px;
     }
+
+    @media screen and (max-width: 360px) {
+      width: 165px;
+    }
   }
   &__item-wrapper {
     padding: 0 10px;
@@ -128,6 +132,7 @@
       @media screen and (max-width: 768px) {
         font-size: 18px;
         margin-bottom: 15px;
+        text-align: center;
       }
     }
   }
@@ -145,6 +150,12 @@
       font-size: 16px;
       width: 269px;
       line-height: 21px;
+    }
+    @media screen and (max-width: 360px) {
+      width: 225px;
+      font-size: 14px;
+      text-align: center;
+      margin: 0 auto;
     }
   }
 }
