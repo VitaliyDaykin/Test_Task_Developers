@@ -5,6 +5,24 @@ $(document).ready(function () {
     $(".menu-burger-btn, .header__blok-menu").toggleClass("active");
     $("body").toggleClass("lock");
   });
+
+  let btnCategories = $(".menu-burger-btn"); // указываем кнопку
+  let categories = $(".header__blok-menu");
+
+  $(document).mouseup(function (e) {
+    // событие клика по веб-документу
+    if (
+      !btnCategories.is(e.target) &&
+      btnCategories.has(e.target).length === 0 &&
+      // если клик был не по нашему блоку
+      !categories.is(e.target) // &&
+      // categories.has(e.target).length === 0
+      // и не по его дочерним элементам
+    ) {
+      categories.removeClass("active");
+      btnCategories.removeClass("active");
+    }
+  });
 });
 
 // accordion
